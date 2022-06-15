@@ -1,3 +1,4 @@
+#  Calculator project
 from replit import clear
 from art import logo
 
@@ -29,13 +30,13 @@ operations = {
 def calculator():
     logo()
     should_continue = True
-    num1 = float(int(input("what's your first number: ")))
+    num1 = float(input("what's your first number: "))
 
     for symbol in operations:
         print(symbol)
     while should_continue:
         symbol_operations = input("Pick a symbol: ")
-        num2 = float(int(input("what's your next number: ")))
+        num2 = float(input("what's your next number: "))
 
         calculation_symbol = operations[symbol_operations]
         answer = calculation_symbol(num1, num2)
